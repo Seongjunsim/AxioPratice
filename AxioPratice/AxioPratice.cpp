@@ -8,7 +8,7 @@ void print(const boost::system::error_code& e, boost::asio::steady_timer* t ,int
 		t->async_wait(boost::bind(print, boost::asio::placeholders::error, t, count));
 	}
 }
-
+/*
 int main()
 {
 	boost::asio::io_context io;
@@ -16,3 +16,4 @@ int main()
 	io.run();
 	return 0;
 }
+*/
